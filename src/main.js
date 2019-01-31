@@ -43,8 +43,12 @@ Vue.filter('datetime',(val)=>{
 Vue.filter('currency',(val)=>{
   return '¥'+val.toFixed(2)
 })
+Vue.filter('tableStatus',(val)=>{
+
+})
+
 new Vue({
   router,
-  store,
-  render: h => h(App)
+  store,  //指定当前项目的唯一的Vuex存储仓库对象
+  render: h => h(App) //render:(createElement)=>{return createElement(App) }根据App组件创建<app></app>元素，挂载到#app内部
 }).$mount('#app')

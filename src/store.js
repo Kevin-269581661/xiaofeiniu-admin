@@ -16,7 +16,7 @@ export default new Vuex.Store({
       state.adminName = val;
     },
     //修改全局设置信息
-    setGlobalSetings(state,val){
+    setGlobalSettings(state,val){
       state.globalSettings = val;
     }
   },

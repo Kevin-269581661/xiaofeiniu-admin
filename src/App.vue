@@ -9,7 +9,7 @@ export default {
     //获取全局设置保存vuex中
     var url = this.$store.state.globalSettings.apiUrl+'/admin/settings';
     this.$axios.get(url).then((res)=>{
-      this.$store.commit('setGlobalSetings',res.data);
+      this.$store.commit('setGlobalSettings',res.data);
     }).catch((err)=>{
       console.log(err)
     })
